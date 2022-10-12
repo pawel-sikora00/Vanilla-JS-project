@@ -45,7 +45,7 @@ const loadCharactersByHouse = async (name) => {
 };
 
 // RECORD LOGIC
-const reusable = async (characters) => {
+const displayContents = async (characters) => {
   const closeModal = (e) => {
     if (e.target === modalContainer) {
       modalContainer.style.display = "none";
@@ -116,7 +116,7 @@ const reusable = async (characters) => {
       return 0;
     });
 
-    reusable(descendingNames);
+    displayContents(descendingNames);
   });
 
   sortByNameZA.addEventListener("click", () => {
@@ -125,7 +125,7 @@ const reusable = async (characters) => {
       if (a.name.toLowerCase() < b.name.toLowerCase()) return 1;
       return 0;
     });
-    reusable(ascendingNames);
+    displayContents(ascendingNames);
   });
 
   listOfRecords.addEventListener("click", (e) => {
@@ -234,7 +234,7 @@ allStudentsBtn.addEventListener("click", async () => {
     console.log("ERROR!");
   }
 
-  reusable(characters);
+  displayContents(characters);
 });
 
 gryffindorBtn.addEventListener("click", async () => {
@@ -245,7 +245,7 @@ gryffindorBtn.addEventListener("click", async () => {
     console.log("ERROR!");
   }
 
-  reusable(characters);
+  displayContents(characters);
 });
 
 slytherinBtn.addEventListener("click", async () => {
@@ -256,7 +256,7 @@ slytherinBtn.addEventListener("click", async () => {
     console.log("ERROR!");
   }
 
-  reusable(characters);
+  displayContents(characters);
 });
 
 hufflepuffBtn.addEventListener("click", async () => {
@@ -267,7 +267,7 @@ hufflepuffBtn.addEventListener("click", async () => {
     console.log("ERROR!");
   }
 
-  reusable(characters);
+  displayContents(characters);
 });
 
 ravenclawBtn.addEventListener("click", async () => {
@@ -279,7 +279,7 @@ ravenclawBtn.addEventListener("click", async () => {
   }
   characters = characters;
 
-  reusable(characters);
+  displayContents(characters);
 });
 
 favoritesBtn.addEventListener("click", () => {
