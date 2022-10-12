@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" async></script>
+  </head>
+  <body>
+    <div class="menu">
+      <button class="menu-btn" id="all-students">All students</button>
+      <button class="menu-btn" id="gryffindor">Gryffindor</button>
+      <button class="menu-btn" id="slytherin">Slytherin</button>
+      <button class="menu-btn" id="hufflepuff">Hufflepuff</button>
+      <button class="menu-btn" id="ravenclaw">Ravenclaw</button>
+      <button class="menu-btn" id="favorites">Favorites</button>
+    </div>
+    <div id="content">
+      <div class="sort-btns">
+        <button id="sort-by-name-az">Sort by name A-Z</button>
+        <button id="sort-by-name-za">Sort by name Z-A</button>
+      </div>
+      <div id="columns" class="columns">
+        <div class="column-item">Name</div>
+        <div class="column-item">Date of birth</div>
+        <div class="column-item">House</div>
+        <div class="column-item">Wizard</div>
+        <div class="column-item">Ancestry</div>
+        <div class="column-item">Is student/staff</div>
+      </div>
+      <div class="records" id="list-of-records"></div>
+      <div id="modal-container">
+        <div id="modal">
+          <div>
+            <div id="modal-name"></div>
+            <div id="modal-date-of-birth"></div>
+            <div id="modal-house"></div>
+            <div id="modal-wizard"></div>
+            <div id="modal-ancestry"></div>
+            <div id="modal-is-student"></div>
+          </div>
+          <div>
+            <div><img id="modal-image" /></div>
+          </div>
+          <div class="modal-buttons" id="modal-buttons"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
